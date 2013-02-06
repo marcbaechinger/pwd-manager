@@ -16,9 +16,9 @@
   <body>
     <x-listview class="list">
       <header>
-        <button class="dropSecret">drop</button>
+        <button class="dropSecret" title="Drops secret to prompt again before next use">drop</button>
         <h1>Passwords</h1>
-        <button class="add" data-view=".edit" data-animation="slideDown">+</button>
+        <button class="add" data-view=".edit" data-animation="slideDown" title="add a credential">+</button>
       </header>
     </x-listview>
 
@@ -48,7 +48,7 @@
 		  <label>Password</label>
 		  <input type="password" name="password" />
 	  </div>
-      <button type="submit" class="btn add">Add</button>
+      <button id="store-btn" type="submit" class="btn add">Add</button>
     </x-view>
 
     <div class="loading">Loading...</div>
