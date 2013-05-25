@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 	<script>
-	var appInstall = navigator.mozApps.install("/manifest.webapp");
+	var appInstall = navigator.mozApps.install("http://marcbaechinger.github.io/pwd-manager/manifest.webapp");
 	appInstall.onsuccess = function(data) {
 		document.getElementById("button").innerHTML = "jajajajajajajajaja!!";
 	};
